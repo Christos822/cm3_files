@@ -166,6 +166,7 @@ kernel/drivers/gpio/gpio-rockchip.ko
 kernel/drivers/pwm/pwm-rockchip.ko
 kernel/drivers/pci/controller/pcierockchiphost.ko
 kernel/drivers/pci/controller/dwc/pcie-dw-rockchip.ko
+kernel/drivers/pci/controller/dwc/pcie-dw-ep-rockchip.ko
 kernel/drivers/video/backlight/backlight.ko
 kernel/drivers/video/backlight/pwm_bl.ko
 kernel/drivers/video/rockchip/rga3/rga3.ko
