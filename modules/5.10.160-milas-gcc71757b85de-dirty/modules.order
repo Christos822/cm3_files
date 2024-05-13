@@ -51,8 +51,8 @@ kernel/drivers/scsi/libiscsi.ko
 kernel/drivers/scsi/libiscsi_tcp.ko
 kernel/drivers/scsi/iscsi_tcp.ko
 kernel/drivers/net/phy/microchip.ko
+kernel/drivers/net/phy/mscc/mscc.ko
 kernel/drivers/net/phy/smsc.ko
-kernel/drivers/net/ethernet/realtek/realtek_pgtool/pgdrv.ko
 kernel/drivers/net/wireless/atmel/at76c50x-usb.ko
 kernel/drivers/net/wireless/broadcom/brcm80211/brcmutil/brcmutil.ko
 kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/brcmfmac.ko

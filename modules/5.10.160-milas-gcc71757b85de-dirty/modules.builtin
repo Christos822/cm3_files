@@ -333,15 +333,16 @@ kernel/drivers/net/phy/mdio_devres.ko
 kernel/drivers/net/phy/phylink.ko
 kernel/drivers/net/phy/libphy.ko
 kernel/drivers/net/phy/fixed_phy.ko
+kernel/drivers/net/phy/motorcomm.ko
 kernel/drivers/net/phy/realtek.ko
 kernel/drivers/net/phy/rockchip.ko
+kernel/drivers/net/phy/rk630phy.ko
 kernel/drivers/net/mdio/of_mdio.ko
 kernel/drivers/net/pcs/pcs-xpcs.ko
 kernel/drivers/net/tun.ko
 kernel/drivers/net/tap.ko
 kernel/drivers/net/veth.ko
 kernel/drivers/net/vxlan.ko
-kernel/drivers/net/ethernet/realtek/r8125/r8125.ko
 kernel/drivers/net/ethernet/stmicro/stmmac/stmmac.ko
 kernel/drivers/net/ethernet/stmicro/stmmac/stmmac-platform.ko
 kernel/drivers/net/ethernet/stmicro/stmmac/dwmac-rockchip.ko
@@ -354,6 +355,7 @@ kernel/drivers/net/usb/cdc_ether.ko
 kernel/drivers/net/usb/rndis_host.ko
 kernel/drivers/net/usb/usbnet.ko
 kernel/drivers/net/usb/cdc_ncm.ko
+kernel/drivers/net/lte/lte_em05.ko
 kernel/drivers/cdrom/cdrom.ko
 kernel/drivers/usb/common/usb-common.ko
 kernel/drivers/usb/core/usbcore.ko
