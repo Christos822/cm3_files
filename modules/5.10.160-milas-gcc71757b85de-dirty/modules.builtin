@@ -58,7 +58,6 @@ kernel/crypto/skcipher.ko
 kernel/crypto/crypto_hash.ko
 kernel/crypto/akcipher.ko
 kernel/crypto/kpp.ko
-kernel/crypto/dh_generic.ko
 kernel/crypto/rsa_generic.ko
 kernel/crypto/crypto_acompress.ko
 kernel/crypto/cryptomgr.ko
@@ -163,12 +162,10 @@ kernel/drivers/pinctrl/pinctrl-rockchip.ko
 kernel/drivers/pinctrl/pinctrl-rk805.ko
 kernel/drivers/pinctrl/pinctrl-rk806.ko
 kernel/drivers/gpio/gpio-generic.ko
-kernel/drivers/gpio/gpio-pca953x.ko
 kernel/drivers/gpio/gpio-rockchip.ko
 kernel/drivers/pwm/pwm-rockchip.ko
 kernel/drivers/pci/controller/pcierockchiphost.ko
 kernel/drivers/pci/controller/dwc/pcie-dw-rockchip.ko
-kernel/drivers/pci/controller/dwc/pcie-dw-ep-rockchip.ko
 kernel/drivers/video/backlight/backlight.ko
 kernel/drivers/video/backlight/pwm_bl.ko
 kernel/drivers/video/rockchip/rga3/rga3.ko
@@ -197,7 +194,6 @@ kernel/drivers/clk/rockchip/clk-out.ko
 kernel/drivers/clk/rockchip/clk-rk1808.ko
 kernel/drivers/clk/rockchip/clk-rk3328.ko
 kernel/drivers/dma/pl330.ko
-kernel/drivers/soc/rockchip/rockchip_amp.ko
 kernel/drivers/soc/rockchip/rockchip-cpuinfo.ko
 kernel/drivers/soc/rockchip/grf.ko
 kernel/drivers/soc/rockchip/io-domain.ko
@@ -255,13 +251,10 @@ kernel/drivers/gpu/drm/drm_kms_helper.ko
 kernel/drivers/gpu/drm/drm.ko
 kernel/drivers/gpu/drm/drm_mipi_dsi.ko
 kernel/drivers/gpu/drm/drm_panel_orientation_quirks.ko
-kernel/drivers/gpu/drm/rockchip/dw_hdcp2.ko
 kernel/drivers/gpu/drm/rockchip/rockchipdrm.ko
 kernel/drivers/gpu/drm/panel/panel-simple.ko
 kernel/drivers/gpu/drm/panel/panel-jadard-jd9365da-h3.ko
 kernel/drivers/gpu/drm/panel/panel-radxa-display-8hd.ko
-kernel/drivers/gpu/drm/panel/panel-raspberrypi-touchscreen.ko
-kernel/drivers/gpu/drm/panel/panel-raspits-tc358762.ko
 kernel/drivers/gpu/drm/bridge/display-connector.ko
 kernel/drivers/gpu/drm/bridge/sii902x.ko
 kernel/drivers/gpu/drm/bridge/analogix/analogix_dp.ko
@@ -274,6 +267,7 @@ kernel/drivers/gpu/drm/bridge/synopsys/dw-hdmi-cec.ko
 kernel/drivers/gpu/drm/bridge/synopsys/dw-hdmi-qp-cec.ko
 kernel/drivers/gpu/drm/bridge/synopsys/dw-mipi-dsi.ko
 kernel/drivers/gpu/arm/midgard/midgard_kbase.ko
+kernel/drivers/gpu/arm/mali400/mali/mali.ko
 kernel/drivers/gpu/arm/bifrost/bifrost_kbase.ko
 kernel/drivers/connector/cn.ko
 kernel/drivers/base/firmware_loader/firmware_class.ko
@@ -286,7 +280,6 @@ kernel/drivers/block/xen-blkfront.ko
 kernel/drivers/block/rbd.ko
 kernel/drivers/block/zram/zram.ko
 kernel/drivers/misc/lkdtm/lkdtm.ko
-kernel/drivers/misc/rockpi_mcu.ko
 kernel/drivers/mfd/mfd-core.ko
 kernel/drivers/mfd/tps6586x.ko
 kernel/drivers/mfd/rk806-core.ko
@@ -339,20 +332,14 @@ kernel/drivers/net/phy/mdio_devres.ko
 kernel/drivers/net/phy/phylink.ko
 kernel/drivers/net/phy/libphy.ko
 kernel/drivers/net/phy/fixed_phy.ko
-kernel/drivers/net/phy/motorcomm.ko
 kernel/drivers/net/phy/realtek.ko
 kernel/drivers/net/phy/rockchip.ko
-kernel/drivers/net/phy/rk630phy.ko
 kernel/drivers/net/mdio/of_mdio.ko
 kernel/drivers/net/pcs/pcs-xpcs.ko
 kernel/drivers/net/tun.ko
 kernel/drivers/net/tap.ko
 kernel/drivers/net/veth.ko
 kernel/drivers/net/vxlan.ko
-kernel/drivers/net/ethernet/realtek/8139cp.ko
-kernel/drivers/net/ethernet/realtek/8139too.ko
-kernel/drivers/net/ethernet/realtek/r8168/r8168.ko
-kernel/drivers/net/ethernet/realtek/r8169.ko
 kernel/drivers/net/ethernet/realtek/r8125/r8125.ko
 kernel/drivers/net/ethernet/stmicro/stmmac/stmmac.ko
 kernel/drivers/net/ethernet/stmicro/stmmac/stmmac-platform.ko
@@ -366,7 +353,6 @@ kernel/drivers/net/usb/cdc_ether.ko
 kernel/drivers/net/usb/rndis_host.ko
 kernel/drivers/net/usb/usbnet.ko
 kernel/drivers/net/usb/cdc_ncm.ko
-kernel/drivers/net/lte/lte_em05.ko
 kernel/drivers/cdrom/cdrom.ko
 kernel/drivers/usb/common/usb-common.ko
 kernel/drivers/usb/core/usbcore.ko
@@ -418,13 +404,11 @@ kernel/drivers/input/touchscreen/gsl3673-ts.ko
 kernel/drivers/input/touchscreen/gt1x/gt1x-ts.ko
 kernel/drivers/input/touchscreen/gt9xx/goodix_gt9xx.ko
 kernel/drivers/input/touchscreen/usbtouchscreen.ko
-kernel/drivers/input/touchscreen/raspits_ft5426.ko
 kernel/drivers/input/remotectl/rockchip_pwm_remotectl.ko
 kernel/drivers/input/misc/rk805-pwrkey.ko
 kernel/drivers/input/misc/uinput.ko
 kernel/drivers/input/misc/xen-kbdfront.ko
 kernel/drivers/rtc/rtc-hym8563.ko
-kernel/drivers/rtc/rtc-pcf85063.ko
 kernel/drivers/rtc/rtc-rk808.ko
 kernel/drivers/i2c/i2c-core.ko
 kernel/drivers/i2c/i2c-dev.ko
@@ -456,7 +440,6 @@ kernel/drivers/media/v4l2-core/videodev.ko
 kernel/drivers/media/v4l2-core/v4l2-dv-timings.ko
 kernel/drivers/media/v4l2-core/v4l2-mem2mem.ko
 kernel/drivers/media/dvb-core/dvb-core.ko
-kernel/drivers/media/rc/rc-core.ko
 kernel/drivers/media/cec/core/cec.ko
 kernel/drivers/media/common/videobuf2/videobuf2-common.ko
 kernel/drivers/media/common/videobuf2/videobuf2-v4l2.ko
@@ -559,7 +542,6 @@ kernel/drivers/iio/light/isl29018.ko
 kernel/drivers/iio/light/tsl2563.ko
 kernel/drivers/iio/light/tsl2583.ko
 kernel/drivers/iio/trigger/iio-trig-sysfs.ko
-kernel/drivers/android/binder.ko
 kernel/drivers/nvmem/nvmem_core.ko
 kernel/drivers/nvmem/nvmem_rockchip_efuse.ko
 kernel/drivers/nvmem/nvmem-rockchip-otp.ko
@@ -596,7 +578,6 @@ kernel/sound/soc/codecs/snd-soc-max98090.ko
 kernel/sound/soc/codecs/snd-soc-hdmi-codec.ko
 kernel/sound/soc/codecs/snd-soc-rk3308.ko
 kernel/sound/soc/codecs/snd-soc-rk3328.ko
-kernel/sound/soc/codecs/snd-soc-rk3528.ko
 kernel/sound/soc/codecs/snd-soc-rk817.ko
 kernel/sound/soc/codecs/snd-soc-rk-codec-digital.ko
 kernel/sound/soc/codecs/snd-soc-rl6231.ko
@@ -612,7 +593,6 @@ kernel/sound/soc/generic/snd-soc-simple-card.ko
 kernel/sound/soc/rockchip/snd-soc-rockchip-i2s.ko
 kernel/sound/soc/rockchip/snd-soc-rockchip-i2s-tdm.ko
 kernel/sound/soc/rockchip/snd-soc-rockchip-pdm.ko
-kernel/sound/soc/rockchip/snd-soc-rockchip-sai.ko
 kernel/sound/soc/rockchip/snd-soc-rockchip-spdif.ko
 kernel/sound/soc/rockchip/snd-soc-rockchip-spdifrx.ko
 kernel/sound/soc/rockchip/snd-soc-rockchip-hdmi.ko
