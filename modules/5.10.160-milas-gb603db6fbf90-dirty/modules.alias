@@ -5602,8 +5602,6 @@ alias ip6t_TCPMSS xt_TCPMSS
 alias ipt_TCPMSS xt_TCPMSS
 alias ip6t_TEE xt_TEE
 alias ipt_TEE xt_TEE
-alias ip6t_TRACE xt_TRACE
-alias ipt_TRACE xt_TRACE
 alias ip6t_hashlimit xt_hashlimit
 alias ipt_hashlimit xt_hashlimit
 alias ip6t_physdev xt_physdev
@@ -5645,7 +5643,6 @@ alias nf-flowtable-10 nf_flow_table_ipv6
 alias ip6t_dst ip6t_hbh
 alias ip6t_DNPT ip6t_NPT
 alias ip6t_SNPT ip6t_NPT
-alias net-pf-10 ipv6
 alias xfrm-type-10-51 ah6
 alias xfrm-type-10-50 esp6
 alias xfrm-type-10-108 ipcomp6
@@ -5655,6 +5652,10 @@ alias rtnl-link-sit sit
 alias netdev-ip6tnl0 ip6_tunnel
 alias rtnl-link-ip6tnl ip6_tunnel
 alias net-pf-16-proto-4-type-17 af_packet_diag
+alias nft-expr-7-meta nft_meta_bridge
+alias nft-expr-7-reject nft_reject_bridge
+alias nf_conntrack-7 nf_conntrack_bridge
+alias nf-logger-7-0 nf_log_bridge
 alias rpc-auth-gss-1.2.840.113554.1.2.2 rpcsec_gss_krb5
 alias rpc-auth-gss-390005 rpcsec_gss_krb5
 alias rpc-auth-gss-390004 rpcsec_gss_krb5
@@ -5667,11 +5668,6 @@ alias net-pf-16-proto-4-type-2-262 mptcp_diag
 alias tcp-ulp-tls tls
 alias tls tls
 alias net-pf-15 af_key
-alias nft-expr-7-meta nft_meta_bridge
-alias nft-expr-7-reject nft_reject_bridge
-alias nf_conntrack-7 nf_conntrack_bridge
-alias nf-logger-7-0 nf_log_bridge
-alias rtnl-link-bridge bridge
 alias net-pf-5 appletalk
 alias net-pf-29 can
 alias can-proto-1 can_raw
