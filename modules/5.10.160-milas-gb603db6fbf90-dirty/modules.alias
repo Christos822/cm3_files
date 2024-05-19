@@ -45,8 +45,6 @@ alias crypto-seqiv seqiv
 alias seqiv seqiv
 alias crypto-echainiv echainiv
 alias echainiv echainiv
-alias crypto-hmac hmac
-alias hmac hmac
 alias crypto-md4 md4
 alias md4 md4
 alias crypto-michael_mic michael_mic
@@ -81,6 +79,7 @@ alias crypto-essiv essiv
 alias essiv essiv
 alias crypto-ecdh ecdh_generic
 alias ecdh ecdh_generic
+alias net-pf-16-proto-8 scsi_transport_iscsi
 alias mdio:0000000000000111110000010011???? microchip
 alias mdio:0000000000000111110000010001???? smsc
 alias mdio:0000000000000111110000001111???? smsc

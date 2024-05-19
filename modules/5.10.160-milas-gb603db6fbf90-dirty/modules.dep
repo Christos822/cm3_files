@@ -28,7 +28,6 @@ kernel/security/keys/trusted-keys/trusted.ko:
 kernel/security/keys/encrypted-keys/encrypted-keys.ko: kernel/security/keys/trusted-keys/trusted.ko
 kernel/crypto/seqiv.ko:
 kernel/crypto/echainiv.ko:
-kernel/crypto/hmac.ko:
 kernel/crypto/md4.ko:
 kernel/crypto/michael_mic.ko:
 kernel/crypto/authenc.ko:
@@ -47,6 +46,10 @@ kernel/crypto/async_tx/async_pq.ko: kernel/crypto/async_tx/async_xor.ko kernel/c
 kernel/crypto/async_tx/async_raid6_recov.ko: kernel/crypto/async_tx/async_tx.ko kernel/lib/raid6/raid6_pq.ko
 kernel/block/blk-mq-virtio.ko:
 kernel/drivers/misc/eeprom/eeprom_93cx6.ko:
+kernel/drivers/scsi/scsi_transport_iscsi.ko:
+kernel/drivers/scsi/libiscsi.ko: kernel/drivers/scsi/scsi_transport_iscsi.ko
+kernel/drivers/scsi/libiscsi_tcp.ko: kernel/drivers/scsi/libiscsi.ko kernel/drivers/scsi/scsi_transport_iscsi.ko
+kernel/drivers/scsi/iscsi_tcp.ko: kernel/drivers/scsi/libiscsi_tcp.ko kernel/drivers/scsi/libiscsi.ko kernel/drivers/scsi/scsi_transport_iscsi.ko
 kernel/drivers/net/phy/microchip.ko:
 kernel/drivers/net/phy/smsc.ko:
 kernel/drivers/net/ethernet/realtek/r8168/r8168.ko:
@@ -728,7 +731,6 @@ kernel/net/ieee802154/ieee802154.ko:
 kernel/net/ieee802154/ieee802154_socket.ko: kernel/net/ieee802154/ieee802154.ko
 kernel/net/mac802154/mac802154.ko: kernel/net/ieee802154/ieee802154.ko
 kernel/net/wimax/wimax.ko:
-kernel/net/ceph/libceph.ko:
 kernel/net/batman-adv/batman-adv.ko: kernel/net/bridge/bridge.ko kernel/net/802/stp.ko kernel/net/llc/llc.ko kernel/net/ipv6/ipv6.ko
 kernel/net/openvswitch/openvswitch.ko: kernel/net/nsh/nsh.ko
 kernel/net/openvswitch/vport-vxlan.ko: kernel/net/openvswitch/openvswitch.ko kernel/net/nsh/nsh.ko

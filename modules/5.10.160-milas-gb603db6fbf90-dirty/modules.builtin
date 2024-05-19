@@ -58,6 +58,7 @@ kernel/crypto/rsa_generic.ko
 kernel/crypto/crypto_acompress.ko
 kernel/crypto/cryptomgr.ko
 kernel/crypto/cmac.ko
+kernel/crypto/hmac.ko
 kernel/crypto/crypto_null.ko
 kernel/crypto/md5.ko
 kernel/crypto/sha1_generic.ko
@@ -258,6 +259,7 @@ kernel/drivers/base/regmap/regmap-spi.ko
 kernel/drivers/base/regmap/regmap-mmio.ko
 kernel/drivers/block/brd.ko
 kernel/drivers/block/loop.ko
+kernel/drivers/block/rbd.ko
 kernel/drivers/block/zram/zram.ko
 kernel/drivers/misc/lkdtm/lkdtm.ko
 kernel/drivers/misc/eeprom/at24.ko
@@ -278,6 +280,11 @@ kernel/drivers/scsi/sd_mod.ko
 kernel/drivers/scsi/sr_mod.ko
 kernel/drivers/nvme/host/nvme-core.ko
 kernel/drivers/nvme/host/nvme.ko
+kernel/drivers/nvme/host/nvme-fabrics.ko
+kernel/drivers/nvme/host/nvme-tcp.ko
+kernel/drivers/nvme/target/nvmet.ko
+kernel/drivers/nvme/target/nvme-loop.ko
+kernel/drivers/nvme/target/nvmet-tcp.ko
 kernel/drivers/ata/libata.ko
 kernel/drivers/ata/ahci.ko
 kernel/drivers/ata/libahci.ko
@@ -574,6 +581,7 @@ kernel/sound/soc/rockchip/snd-soc-rockchip-hdmi.ko
 kernel/sound/soc/rockchip/snd-soc-rockchip-max98090.ko
 kernel/sound/soc/rockchip/snd-soc-rockchip-multicodecs.ko
 kernel/sound/soc/rockchip/snd-soc-rockchip-rt5645.ko
+kernel/net/sched/sch_ingress.ko
 kernel/net/sched/cls_bpf.ko
 kernel/net/netfilter/nfnetlink.ko
 kernel/net/netfilter/nfnetlink_acct.ko
@@ -725,4 +733,5 @@ kernel/net/mac80211/mac80211.ko
 kernel/net/rfkill/rfkill.ko
 kernel/net/rfkill/rfkill-rk.ko
 kernel/net/dns_resolver/dns_resolver.ko
+kernel/net/ceph/libceph.ko
 kernel/virt/lib/irqbypass.ko
